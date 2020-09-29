@@ -1,0 +1,50 @@
+---
+title: 'R Lab: Generalized Linear Mixed Effects Models'
+subtitle: 'STAT 340: Applied Regression'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For this lab, you will consider the trashball data set collected by the class that you are also using in your Paper 3. We are interested in understanding how throwing distance affects whether or not a shot is made.
+
+```{r}
+trashball <- read.csv("https://raw.githubusercontent.com/marievozanne/marievozanne.github.io/master/stat340_f2020/data/Trashball%20.csv")
+head(trashball)
+```
+
+### (1) Examine the relationship between distance and shots made as a function of distance for each individual. Do the distributions appear to be similar? Are there any other variables that one should consider when plotting these data?
+
+```{r}
+
+```
+
+
+### (2) Fit a regression model for success and distance that assumes that all throw outcomes (`Success`) are independent. Include any other fixed effects that you think are important to control for in this model, justifying their inclusion briefly.
+
+```{r}
+
+```
+
+
+### (3) Fit a regression model for success and distance that takes into account that each student's tosses are likely correlated. Include the same fixed effects that you included in (2).
+
+```{r}
+
+```
+
+### (4) Using an appropriate model comparison metric, compare your models in (2) and (3) to determine whether the random effects in (3) are needed. 
+
+```{r}
+
+```
+
+### (5) Using the model you chose in (4), what is the 95% confidence interval associated with the effect of distance on the odds of success? Interpret this in the context of the problem. Are these results generalizable to the broader population?
+
+```{r}
+
+```
+
+### (6) How did you choose to deal with missing data in this data set? How does your choice impact your model estimates?
